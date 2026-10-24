@@ -13,6 +13,7 @@ ci_test.db
 # Scratch notes and pasted chat logs. These have contained plaintext
 # credentials before; keep them out of history entirely.
 random/
+selfwork/
 
 # Generated data artifacts (uploaded datasets, versions, trained models)
 data_storage/
@@ -30,3 +31,7 @@ Project_Resume_Highlights.pdf
 Project_Resume_Highlights.md
 Technical_Architecture_Note_Faculty.md
 make_pitch_slide.py
+
+assets/
+test_time.csv
+.cursorrules
