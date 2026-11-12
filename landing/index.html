@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soft Sensor Toolbox — Inferential sensing for process plants</title>
+  <meta name="description" content="Soft Sensor Toolbox turns the historian data you already collect into live estimates of the quality variables you cannot measure continuously. Upload, model, validate and deploy — in one workspace." />
+  <meta name="theme-color" content="#0b1c2c" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Soft Sensor Toolbox home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none"><rect x="2" y="2" width="28" height="28" rx="8" fill="#2ec4b6"/><path d="M7 21.5 12 14l3.5 4L21 10l4 6.5" stroke="#07263a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="10" r="2.2" fill="#07263a"/></svg>
+        </span>
+        <span class="brand-text">Soft Sensor <strong>Toolbox</strong></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span><span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#platform">Platform</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#industries">Industries</a>
+        <a href="#deployment">Deployment</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn-ghost" href="https://github.com/nadgawd/soft-sensor-toolbox" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-primary" href="https://nadgawd.github.io/SoftSensorTB/" target="_blank" rel="noreferrer">Launch the toolbox <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Inferential sensing · Process analytics</p>
+          <h1>Measure what your lab measures. <em>Every minute, not every shift.</em></h1>
+          <p class="hero-lede">Soft Sensor Toolbox turns the historian data you already collect into live estimates of the quality variables you can only check in the lab — composition, viscosity, melt index, octane, moisture and more.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="https://nadgawd.github.io/SoftSensorTB/" target="_blank" rel="noreferrer">Launch the toolbox <span aria-hidden="true">→</span></a>
+            <a class="btn btn-outline btn-lg" href="#workflow">See how it works</a>
+          </div>
+          <ul class="hero-points">
+            <li>No new instruments to install</li>
+            <li>Models you can read as equations</li>
+            <li>Live deployment to the plant floor</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Preview of the Soft Sensor Toolbox workspace">
+          <div class="app-window">
+            <div class="app-window-bar">
+              <span class="win-dots"><i></i><i></i><i></i></span>
+              <span class="win-title">Soft Sensor Toolbox — crude unit · product quality</span>
+              <span class="win-live"><span class="pulse"></span> Live</span>
+            </div>
+            <div class="app-window-body">
+              <aside class="app-steps" aria-hidden="true">
+                <span class="app-step done">Data</span>
+                <span class="app-step done">Quality</span>
+                <span class="app-step done">Features</span>
+                <span class="app-step active">Model</span>
+                <span class="app-step">Deploy</span>
+              </aside>
+              <div class="app-main-preview">
+                <div class="kpi-row">
+                  <div class="kpi"><span class="kpi-label">Test R²</span><strong>0.94</strong><span class="kpi-sub">held-out samples</span></div>
+                  <div class="kpi"><span class="kpi-label">RMSE</span><strong>0.31</strong><span class="kpi-sub">lab units</span></div>
+                  <div class="kpi"><span class="kpi-label">Estimate</span><strong class="teal">Live</strong><span class="kpi-sub">every 60 s</span></div>
+                </div>
+                <div class="chart-card">
+                  <div class="chart-head"><span>Lab value vs. soft-sensor estimate</span><span class="chart-legend"><i class="lg-lab"></i>Lab <i class="lg-est"></i>Estimate</span></div>
+                  <svg class="chart" viewBox="0 0 520 190" role="img" aria-label="Chart comparing laboratory measurements with soft sensor estimates tracking closely">
+                    <g class="chart-grid"><path d="M36 20H500M36 62H500M36 104H500M36 146H500M36 178H500"/></g>
+                    <path class="chart-est" d="M36 150 C90 138 120 118 165 112 S250 92 295 78 S390 66 430 52 S480 40 500 36"/>
+                    <path class="chart-band" d="M36 162 C90 150 120 130 165 124 S250 104 295 90 S390 78 430 64 S480 52 500 48 L500 24 C480 28 430 40 390 54 S295 66 250 80 S165 100 120 106 S90 126 36 138 Z"/>
+                    <g class="chart-points"><circle cx="70" cy="146" r="4"/><circle cx="130" cy="120" r="4"/><circle cx="195" cy="104" r="4"/><circle cx="260" cy="88" r="4"/><circle cx="325" cy="72" r="4"/><circle cx="395" cy="60" r="4"/><circle cx="460" cy="44" r="4"/></g>
+                  </svg>
+                </div>
+                <p class="equation"><span>ŷ</span> = 0.62·T<sub>out</sub> + 0.41·P<sub>col</sub> − 0.28·F<sub>feed</sub> + 0.17·T<sub>reflux</sub> + 4.03</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero-card hero-card-a"><strong>Drift watch</strong><span>Alerts when the model and the lab part ways</span></div>
+          <div class="hero-card hero-card-b"><strong>Plant connectors</strong><span>OPC UA · MQTT · PI Web API · CSV</span></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="industry-strip reveal" aria-label="Industries served">
+          <span>Built for process industries</span>
+          <ul><li>Oil &amp; gas</li><li>Refining</li><li>Petrochemicals</li><li>Specialty chemicals</li><li>Pharma</li><li>Steel &amp; metals</li><li>Food &amp; beverages</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">The problem</p>
+          <h2>The variable that matters most is often the one you measure least.</h2>
+          <p>Lab assays take hours. Online analysers are expensive, drift, and need constant maintenance. In between, operators run the plant on temperatures and pressures — and hope the quality follows.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card reveal"><span class="problem-num">01</span><h3>Lab results arrive late</h3><p>A four-hour assay means four hours of production you cannot correct. Off-spec material is found after it is made.</p></article>
+          <article class="problem-card reveal"><span class="problem-num">02</span><h3>Analysers cost to own</h3><p>Sampling systems, shelters, calibration and spares make a single online analyser a capital project of its own.</p></article>
+          <article class="problem-card reveal"><span class="problem-num">03</span><h3>The data is already there</h3><p>Your historian holds years of process and lab data. A soft sensor learns the relationship — and estimates quality continuously.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workflow -->
+    <section class="section" id="workflow">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Workflow</p>
+          <h2>From a spreadsheet of plant data to a live estimate, in four steps.</h2>
+        </div>
+        <ol class="workflow">
+          <li class="workflow-step reveal"><span class="workflow-num">1</span><div><h3>Upload &amp; profile</h3><p>Drop in a CSV or Excel export from your historian. The toolbox profiles every column, detects the time axis, and flags gaps, constants and outliers.</p></div></li>
+          <li class="workflow-step reveal"><span class="workflow-num">2</span><div><h3>Clean &amp; choose variables</h3><p>Handle missing values and bad ranges, pick the lab variable to predict, and select the process variables that explain it — with guidance at every step.</p></div></li>
+          <li class="workflow-step reveal"><span class="workflow-num">3</span><div><h3>Train &amp; validate</h3><p>Fit PLS, PCR, Ridge, Lasso, OLS or k-NN models on a split you draw yourself. Compare them on parity, residual and importance plots — and read the final model as a plain equation.</p></div></li>
+          <li class="workflow-step reveal"><span class="workflow-num">4</span><div><h3>Deploy &amp; monitor</h3><p>Publish the model as a live endpoint. Plant connectors stream readings in; the monitor tracks estimates against new lab results and warns on drift.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Platform -->
+    <section class="section section-dark" id="platform">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Platform</p>
+          <h2>Everything a soft-sensor project needs. Nothing it doesn’t.</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal"><div class="feature-icon">◈</div><h3>Guided data quality</h3><p>Missing-share and constant-column checks, outlier review, and one-click fixes — every change versioned, every step reversible.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">∑</div><h3>Proven model families</h3><p>PLS and PCR for collinear plant data, regularised regression, OLS and k-NN — chosen for interpretability, not black boxes.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">◎</div><h3>Diagnostics that convince</h3><p>Parity and residual plots, variable importance, learning curves and a held-out test score — the evidence a review board asks for.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">✦</div><h3>An assistant in the loop</h3><p>Ask in plain language — “drop the columns with more than 20% missing” — and watch the same tools run, explained as they go.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">⇪</div><h3>Export the equation</h3><p>Take the fitted model out as a readable equation and coefficients table, ready for a report, a DCS calculation block, or an audit.</p></article>
+          <article class="feature-card reveal"><div class="feature-icon">⬢</div><h3>Live deployment</h3><p>Serve estimates over an authenticated API, connect via OPC UA, MQTT, PI Web API or CSV, and replay history to test before go-live.</p></article>
+        </div>
+
+        <div class="deploy-panel reveal" id="deployment">
+          <div>
+            <p class="eyebrow">On the plant floor</p>
+            <h3>Built to run where the data lives.</h3>
+            <p>Connectors make only outbound HTTPS calls and keep buffering on disk while the network is down — so a soft sensor keeps estimating through an outage, and an on-premises deployment is available for sites that allow no outbound traffic at all.</p>
+          </div>
+          <ul class="deploy-list">
+            <li><strong>OPC UA</strong><span>Read tags directly from the control system</span></li>
+            <li><strong>MQTT</strong><span>Subscribe to broker topics at line rate</span></li>
+            <li><strong>PI Web API</strong><span>Pull from your existing historian</span></li>
+            <li><strong>CSV replay</strong><span>Prove it on history before it goes live</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section class="section section-light" id="industries">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Industries</p>
+          <h2>Where soft sensors pay for themselves.</h2>
+        </div>
+        <div class="use-grid">
+          <article class="use-card reveal"><h3>Refining &amp; oil and gas</h3><p>Crude quality, product octane and sulphur, column tray temperatures translated into composition — tighter cut points, less giveaway.</p></article>
+          <article class="use-card reveal"><h3>Chemicals &amp; polymers</h3><p>Melt index, viscosity and conversion estimated between lab samples, so grade transitions finish sooner and off-spec tonnes fall.</p></article>
+          <article class="use-card reveal"><h3>Pharma &amp; food</h3><p>Moisture, potency and blend uniformity tracked continuously for batch release support and process analytical technology (PAT).</p></article>
+          <article class="use-card reveal"><h3>Steel, cement &amp; utilities</h3><p>Emissions, clinker quality and boiler efficiency inferred from standard instrumentation — no new analyser shelters required.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">FAQ</p>
+          <h2>Questions, answered.</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false">What is a soft sensor?<span aria-hidden="true">+</span></button><div class="faq-a"><p>A soft sensor is a model that estimates a hard-to-measure quality variable from easy-to-measure process variables — temperatures, pressures, flows — trained on historical lab results. It runs continuously, filling the gap between lab assays.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false">What data do I need to start?<span aria-hidden="true">+</span></button><div class="faq-a"><p>A historian export with a timestamp, the process variables, and the lab variable you want to predict, aligned by sample time. A few hundred matched lab samples is a practical starting point.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false">Which models does it build?<span aria-hidden="true">+</span></button><div class="faq-a"><p>PLS, PCR, Ridge, Lasso, ordinary least squares and k-NN — with train/validation/test splits you control, cross-validated diagnostics, and the final model exported as a plain equation.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false">How does it connect to a live plant?<span aria-hidden="true">+</span></button><div class="faq-a"><p>Through lightweight connectors for OPC UA, MQTT, PI Web API and CSV files. They send readings to an authenticated endpoint, buffer locally during outages, and need only outbound HTTPS.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q" type="button" aria-expanded="false">Is my plant data sent anywhere?<span aria-hidden="true">+</span></button><div class="faq-a"><p>This landing page collects nothing — it is a static site with no forms, cookies or trackers. The toolbox itself can be deployed on-premises for sites that cannot allow outbound connections.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container cta-inner reveal">
+        <div>
+          <p class="eyebrow">Get started</p>
+          <h2>Your next lab result is already in your historian.</h2>
+          <p>Open the toolbox, upload a dataset, and see your first soft sensor today.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="https://nadgawd.github.io/SoftSensorTB/" target="_blank" rel="noreferrer">Launch the toolbox <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="26" height="26" fill="none"><rect x="2" y="2" width="28" height="28" rx="8" fill="#2ec4b6"/><path d="M7 21.5 12 14l3.5 4L21 10l4 6.5" stroke="#07263a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="21" cy="10" r="2.2" fill="#07263a"/></svg></span><span class="brand-text">Soft Sensor <strong>Toolbox</strong></span></a>
+        <p class="footer-note">Inferential sensing for process plants — from historian export to live estimate.</p>
+      </div>
+      <nav aria-label="Product"><h4>Product</h4><a href="#platform">Platform</a><a href="#workflow">Workflow</a><a href="#deployment">Deployment</a><a href="#faq">FAQ</a></nav>
+      <nav aria-label="Resources"><h4>Resources</h4><a href="https://nadgawd.github.io/SoftSensorTB/" target="_blank" rel="noreferrer">Launch the toolbox</a><a href="https://github.com/nadgawd/soft-sensor-toolbox" target="_blank" rel="noreferrer">GitHub repository</a></nav>
+      <nav aria-label="Industries"><h4>Industries</h4><a href="#industries">Refining &amp; oil and gas</a><a href="#industries">Chemicals &amp; polymers</a><a href="#industries">Pharma &amp; food</a><a href="#industries">Steel &amp; utilities</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year">2026</span> Soft Sensor Toolbox</span><span>softsensortoolbox.online</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
